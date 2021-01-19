@@ -1,0 +1,2 @@
+<?= Yii::$app->shoppingCart->getItemsCount(); 
+?>
