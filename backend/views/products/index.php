@@ -29,7 +29,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
             //'id',
             'title',
-            'category_id',
+             // 'category_id',
+             ['attribute' => 'category_id',
+                'header' => 'Category',
+                'value' => function( $data ) {
+                    return $data->category->title;  
+                },
+            ],
             'description',
             'imagename',
             //'imagepath',
